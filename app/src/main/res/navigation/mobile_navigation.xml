@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.groupproject.HomeFragment"
+        android:label="home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_exercise"
+            app:destination="@id/navigation_exercise" />
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_profile"
+            app:destination="@id/navigation_profile" />
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_health"
+            app:destination="@id/navigation_health" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_exercise"
+        android:name="com.example.groupproject.ExerciseFragment"
+        android:label="exercise"
+        tools:layout="@layout/fragment_exercise" >
+        <action
+            android:id="@+id/action_navigation_exercise_to_navigation_health"
+            app:destination="@id/navigation_health" />
+        <action
+            android:id="@+id/action_navigation_exercise_to_navigation_profile"
+            app:destination="@id/navigation_profile" />
+        <action
+            android:id="@+id/action_navigation_exercise_to_navigation_health2"
+            app:destination="@id/navigation_health" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_health"
+        android:name="com.example.groupproject.HealthFragment"
+        android:label="health"
+        tools:layout="@layout/fragment_health" >
+        <action
+            android:id="@+id/action_navigation_health_to_navigation_home"
+            app:destination="@id/navigation_home" />
+        <action
+            android:id="@+id/action_navigation_health_to_navigation_exercise"
+            app:destination="@id/navigation_exercise" />
+        <action
+            android:id="@+id/action_navigation_health_to_navigation_profile"
+            app:destination="@id/navigation_profile" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.example.groupproject.ProfileFragment"
+        android:label="profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_navigation_profile_to_navigation_home"
+            app:destination="@id/navigation_home" />
+        <action
+            android:id="@+id/action_navigation_profile_to_navigation_exercise"
+            app:destination="@id/navigation_exercise" />
+        <action
+            android:id="@+id/action_navigation_profile_to_navigation_health"
+            app:destination="@id/navigation_health" />
+    </fragment>
+</navigation>

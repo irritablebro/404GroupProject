@@ -1,49 +1,38 @@
 package com.example.groupproject
 
 import android.os.Bundle
-import android.provider.ContactsContract.Profile
-import androidx.appcompat.app.AppCompatActivity
-import androidx.fragment.app.Fragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import androidx.appcompat.app.AppCompatActivity
+import androidx.navigation.findNavController
+import androidx.navigation.ui.AppBarConfiguration
+import androidx.navigation.ui.setupActionBarWithNavController
+import androidx.navigation.ui.setupWithNavController
+//import com.example.bottomnavigation.databinding.ActivityMainBinding
 
+
+import com.example.groupproject.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
-    lateinit var bottomNav:BottomNavigationView
+
+    private lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
 
-        loadFragment(HomeFragment())
-        bottomNav = findViewById(R.id.bottomNavigationView) as BottomNavigationView
-        bottomNav.setOnNavigationItemReselectedListener{
-            when (it.itemId) {
-                R.id.home -> {
-                    loadFragment(HomeFragment())
-                    return@setOnNavigationItemReselectedListener
-                }
-                R.id.exercise -> {
-                    loadFragment(ExerciseFragment())
-                    return@setOnNavigationItemReselectedListener
-                }
-                R.id.health -> {
-                    loadFragment(HealthFragment())
-                    return@setOnNavigationItemReselectedListener
-                }
-                R.id.profile -> {
-                    loadFragment(ProfileFragment())
-                    return@setOnNavigationItemReselectedListener
-                }
-            }
-        }
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
+        val navView: BottomNavigationView = binding.navView
+
+        val navController = findNavController(R.id.nav_host_fragment_activity_main)
+        // Passing each menu ID as a set of Ids because each
+        // menu should be considered as top level destinations.
+        val appBarConfiguration = AppBarConfiguration(
+            setOf(
+                R.id.navigation_home, R.id.navigation_exercise, R.id.navigation_health,R.id.navigation_profile
+            )
+        )
+        setupActionBarWithNavController(navController, appBarConfiguration)
+        navView.setupWithNavController(navController)
     }
-
-    private fun loadFragment(fragment: Fragment) {
-        val transaction = supportFragmentManager.beginTransaction()
-        transaction.replace(R.id.container,fragment)
-        transaction.addToBackStack(null)
-        transaction.commit()
-    }
-
 }
-
