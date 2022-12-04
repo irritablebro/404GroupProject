@@ -6,31 +6,108 @@
     tools:context=".ExerciseFragment">
 
     <!-- TODO: Update blank fragment layout -->
-
-    <LinearLayout
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/textView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Start Exericse Now"
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+        android:textSize="35sp"
+        android:textStyle="bold" />
 
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:text="Start Exericse Now"
-            android:layout_gravity="center"
-            android:textColor="@color/black"
-            android:textSize="35sp"
-            android:textStyle="bold" />
+    <ImageView
+        android:id="@+id/running"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40dp"
+        android:layout_below="@+id/textView"
+        android:background="@drawable/exercise_container"
+        android:src="@drawable/exercise_running">
+    </ImageView>
 
-        <ImageView
-            android:id="@+id/running"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:src="@drawable/exercise_running"
-            android:background="@drawable/exercise_container">
-        </ImageView>
-    </LinearLayout>
+    <ImageView
+        android:id="@+id/swimming"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_toEndOf="@+id/running"
+        android:background="@drawable/exercise_container"
+        android:src="@drawable/exercise_swimming">
+    </ImageView>
+    <ImageView
+        android:id="@+id/lifting"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginLeft="40dp"
+
+        android:layout_below="@+id/running"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/exercise_container"
+        android:src="@drawable/exercise_lifting">
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/basketball"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/swimming"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_toEndOf="@+id/lifting"
+        android:background="@drawable/exercise_container"
+        android:src="@drawable/exercise_basketball">
+    </ImageView>
+    <ImageView
+        android:id="@+id/biking"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginLeft="40dp"
+
+        android:layout_below="@+id/lifting"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/exercise_container"
+        android:src="@drawable/exercise_biking">
+    </ImageView>
+    <ImageView
+        android:id="@+id/soccer"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/basketball"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_toEndOf="@+id/lifting"
+        android:background="@drawable/exercise_container"
+        android:src="@drawable/exercise_soccer">
+    </ImageView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/login_btn_login"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="105dp"
+        android:layout_marginEnd="106dp"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/btn_background"
+        android:gravity="center"
+        android:text="Start Now"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+</RelativeLayout>
+
+
+
 
 
 </FrameLayout>

@@ -13,6 +13,13 @@
         android:theme="@style/Theme.GroupProject"
         tools:targetApi="31">
         <activity
+            android:name=".exercise_detail"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".register"
             android:exported="false">
             <meta-data
@@ -22,8 +29,6 @@
         <activity
             android:name=".sign_in"
             android:exported="false">
-
-
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />

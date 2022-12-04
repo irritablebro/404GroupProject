@@ -4,7 +4,7 @@
     <!-- 设置背景色为红色 -->
     <solid  android:color="@android:color/white"/>
     <!-- 边框为灰色 -->
-    <stroke android:width="2px"  android:color="@color/black"/>
+    <stroke android:width="2px"  android:color="#D9D9D9"/>
     <!-- 这里是圆角的半径-->
-    <corners android:radius="3dip" />
+    <corners android:radius="10dip" />
 </shape>
