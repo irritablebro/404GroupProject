@@ -45,6 +45,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="resourceFile" />
+        <option value="layoutResourceFile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -91,10 +93,16 @@
     <key name="android.template.-1881048602">
       <recent name="com.example.groupproject" />
     </key>
+    <key name="android.template.847500609">
+      <recent name="com.example.groupproject" />
+    </key>
     <key name="android.template.659938459">
       <recent name="com.example.groupproject" />
     </key>
     <key name="android.template.839204157">
+      <recent name="com.example.groupproject" />
+    </key>
+    <key name="android.template.291724679">
       <recent name="com.example.groupproject" />
     </key>
   </component>
