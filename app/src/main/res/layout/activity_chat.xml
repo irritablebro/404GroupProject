@@ -6,13 +6,31 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Chat">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
-    <!--recycler view to display our chats-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:layout_gravity="center"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="Dr, Emmit Jackson"/>
+
+
+
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/idRVChats"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_above="@id/idLLMessage" />
+</LinearLayout>
+    <!--recycler view to display our chats-->
+
 
     <LinearLayout
         android:id="@+id/idLLMessage"
@@ -26,19 +44,20 @@
         <EditText
             android:id="@+id/idEdtMessage"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
             android:layout_weight="4"
+            android:background="@drawable/edittext_background"
             android:hint="Enter Message" />
 
         <!--button to send message-->
         <ImageButton
             android:id="@+id/idIBSend"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_gravity="center_vertical"
             android:layout_weight="1"
-            android:background="@color/purple_200"
-            android:src="@android:drawable/ic_menu_send"
+            android:src="@drawable/ic_send"
             app:tint="@color/white" />
 
     </LinearLayout>

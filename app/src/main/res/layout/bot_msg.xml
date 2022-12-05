@@ -19,7 +19,7 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_margin="10dp"
-            android:src="@drawable/personal_icon" />
+            android:src="@drawable/doctor_emmit_head" />
 
         <!--below widget is for
             displaying message of bot-->
