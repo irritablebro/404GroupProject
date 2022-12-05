@@ -1,10 +1,12 @@
 package com.example.groupproject
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.appcompat.app.AppCompatActivity
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -50,10 +52,20 @@ class HomeFragment : Fragment() {
         @JvmStatic
         fun newInstance(param1: String, param2: String) =
             HomeFragment().apply {
-                arguments = Bundle().apply {
+                var arguments = Bundle().apply {
                     putString(ARG_PARAM1, param1)
                     putString(ARG_PARAM2, param2)
                 }
             }
     }
+
+    class HomeFragment : AppCompatActivity() {
+        override fun onCreate(savedInstanceState: Bundle?) {
+            super.onCreate(savedInstanceState)
+            setContentView(R.layout.fragment_home)
+
+            startActivity(Intent(this@HomeFragment, news_details::class.java))
+        }
+    }
 }
+

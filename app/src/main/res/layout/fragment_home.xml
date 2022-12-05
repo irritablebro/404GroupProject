@@ -137,24 +137,13 @@
         android:id="@+id/news1_main_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="@drawable/news1_main"
         android:text="Health In The Contemporary World"
+        android:autoLink="all"
         android:textSize="18dp"
         android:textColor="@color/black"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="1380dp"/>
-
-    <ImageView
-        android:id="@+id/news2_main_pic"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/news2_main" />
-
-    <TextView
-        android:id="@+id/textView7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        and
-        android:text="TextView" />
-
+        android:layout_marginTop="1380dp"
+        android:clickable="true"/>
 
 </FrameLayout>
