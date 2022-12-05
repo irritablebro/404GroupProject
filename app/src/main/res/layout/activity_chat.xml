@@ -6,30 +6,32 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Chat">
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="16dp"
-            android:layout_gravity="center"
-            android:textSize="20dp"
-            android:textStyle="bold"
-            android:text="Dr, Emmit Jackson"/>
-
-
-
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/idRVChats"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_above="@id/idLLMessage" />
-</LinearLayout>
-    <!--recycler view to display our chats-->
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:layout_gravity="center"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:text="Dr, Emmit Jackson"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/idRVChats"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@id/idLLMessage" />
+        </LinearLayout>
+        <!--recycler view to display our chats-->
+    </ScrollView>
+
 
 
     <LinearLayout
@@ -38,6 +40,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:orientation="horizontal"
+        android:layout_marginBottom="16dp"
+
         android:weightSum="5">
 
         <!--edit text to enter message-->
@@ -57,7 +61,7 @@
             android:layout_height="match_parent"
             android:layout_gravity="center_vertical"
             android:layout_weight="1"
-            android:src="@drawable/ic_send"
+            android:src="@drawable/ic_chat_send"
             app:tint="@color/white" />
 
     </LinearLayout>
