@@ -102,7 +102,7 @@ public class Chat extends AppCompatActivity {
         // url for our brain
         // make sure to add mshape for uid.
         // make sure to add your url.
-        String url ="http://api.brainshop.ai/get?bid=170942&key=jBVHDssNQDicComf&uid=[uid]&msg=" + userMsg;
+        String url ="http://api.brainshop.ai/get?bid=170942&key=jBVHDssNQDicComf&uid=[uid]&msg=[msg]" + userMsg;
 
         // creating a variable for our request queue.
         RequestQueue queue = Volley.newRequestQueue(Chat.this);
