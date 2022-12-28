@@ -45,8 +45,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="layoutResourceFile" />
-        <option value="Class" />
         <option value="resourceFile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -74,14 +74,17 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
     <property name="cidr.known.project.marker" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/drawable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\71464\Documents\Sourcetree\404GroupProject\app\src\main\res\drawable" />
       <recent name="C:\Users\ROG\Documents\Source tree\404GroupProject\app\src\main\res" />
       <recent name="C:\Users\71464\Documents\Sourcetree\404GroupProject\app\src\main\res\drawable-v24" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\71464\Documents\Sourcetree\404GroupProject\app\src\main\res\drawable-v24" />
       <recent name="C:\Users\ROG\Documents\Source tree\404GroupProject\app\src\main\res\drawable" />
     </key>
     <key name="android.template.1165553438">
