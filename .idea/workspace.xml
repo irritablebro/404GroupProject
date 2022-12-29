@@ -6,6 +6,7 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="counter_time" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="AutoImportSettings">
@@ -44,9 +45,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="layoutResourceFile" />
         <option value="resourceFile" />
+        <option value="Kotlin Class" />
         <option value="Class" />
+        <option value="layoutResourceFile" />
       </list>
     </option>
   </component>
@@ -75,7 +77,7 @@
     <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
     <property name="cidr.known.project.marker" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/drawable" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/Healthify-1.0.0" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -88,6 +90,9 @@
       <recent name="C:\Users\ROG\Documents\Source tree\404GroupProject\app\src\main\res\drawable" />
     </key>
     <key name="android.template.1165553438">
+      <recent name="com.example.groupproject" />
+    </key>
+    <key name="android.template.653443805">
       <recent name="com.example.groupproject" />
     </key>
     <key name="android.template.1667265969">
@@ -103,6 +108,9 @@
       <recent name="com.example.groupproject" />
     </key>
     <key name="android.template.839204157">
+      <recent name="com.example.groupproject" />
+    </key>
+    <key name="android.template.-1464848193">
       <recent name="com.example.groupproject" />
     </key>
     <key name="android.template.291724679">

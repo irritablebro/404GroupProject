@@ -21,7 +21,7 @@
         android:textStyle="bold" />
 
     <ImageView
-        android:id="@+id/running"
+        android:id="@+id/runningImg"
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_marginTop="20dp"
@@ -38,7 +38,7 @@
         android:layout_below="@+id/textView"
         android:layout_marginTop="20dp"
         android:layout_marginLeft="20dp"
-        android:layout_toEndOf="@+id/running"
+        android:layout_toEndOf="@+id/runningImg"
         android:background="@drawable/exercise_container"
         android:src="@drawable/exercise_swimming">
     </ImageView>
@@ -48,7 +48,7 @@
         android:layout_height="150dp"
         android:layout_marginLeft="40dp"
 
-        android:layout_below="@+id/running"
+        android:layout_below="@+id/runningImg"
         android:layout_marginTop="20dp"
         android:background="@drawable/exercise_container"
         android:src="@drawable/exercise_lifting">
@@ -89,7 +89,7 @@
     </ImageView>
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/login_btn_login"
+        android:id="@+id/exercise_btn_start"
         android:layout_width="200dp"
         android:layout_height="50dp"
         android:layout_alignParentStart="true"

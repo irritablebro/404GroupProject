@@ -1,10 +1,13 @@
 package com.example.groupproject
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
+import android.widget.ImageView
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -33,8 +36,21 @@ class ExerciseFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+        val view:View=inflater.inflate(R.layout.fragment_exercise,container,false)
+
+        val runningImg=view.findViewById<ImageView>(R.id.runningImg)
+        val start_btn=view.findViewById<Button>(R.id.exercise_btn_start)
+
+        runningImg.setOnClickListener {
+            val intent = Intent (requireActivity(), exercise_detail::class.java)
+            startActivity(intent)
+        }
+        start_btn.setOnClickListener {
+            val intent = Intent (requireActivity(), exercise_detail::class.java)
+            startActivity(intent)
+        }
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_exercise, container, false)
+        return view
     }
 
     companion object {
